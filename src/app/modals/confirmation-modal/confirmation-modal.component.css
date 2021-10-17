@@ -1,0 +1,21 @@
+.dialogContent{
+  border-radius: 40px;
+}
+.btnClose {
+/*  position: absolute;
+  top: 20%;
+  right: 35%;*/
+}
+.saveBtn{
+  background: var(--blue);
+  color: #fff;
+}
+mat-form-field{
+  width: 80%;
+}
+.divActions{
+  width: 80%;
+}
+.matToolbar{
+  margin-bottom: 40px;
+}

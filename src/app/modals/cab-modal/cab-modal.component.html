@@ -1,0 +1,41 @@
+<div class="dialogContent">
+  <mat-toolbar class="matToolbar" fxLayoutAlign="space-between">
+    <h2>Add New Cab</h2>
+
+    <button mat-icon-button (click)="closeDialog()" aria-label="Close dialog" class="btnClose">
+      <mat-icon>close</mat-icon>
+    </button>
+
+  </mat-toolbar>
+
+
+  <form [formGroup]="addingCabForm" *ngIf="addingCabForm">
+
+    <div fxLayout="column" fxLayoutAlign="space-between center">
+
+      <!--Owner-->
+      <mat-form-field appearance="outline">
+        <mat-label>Owner</mat-label>
+        <input type="text" matInput formControlName="owner">
+      </mat-form-field>
+
+      <!--model-->
+      <mat-form-field appearance="outline">
+        <mat-label>Model</mat-label>
+        <input type="text" matInput formControlName="model">
+      </mat-form-field>
+
+      <!--number-->
+      <mat-form-field appearance="outline">
+        <mat-label>number</mat-label>
+        <input type="text" matInput formControlName="number">
+      </mat-form-field>
+
+      <div class="divActions" fxLayoutAlign="flex-end">
+        <button [disabled]="addingCabForm.invalid" class="saveBtn" mat-button (click)="saveCab(addingCabForm)"> Save </button>
+      </div>
+
+    </div>
+  </form>
+
+</div>

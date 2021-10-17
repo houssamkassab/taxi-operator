@@ -1,0 +1,15 @@
+
+mat-tab-group {
+  width: 100%;
+}
+
+::ng-deep mat-tab-header {
+  width: 30%;
+  border-radius: 20px;
+  background: yellow; /* #FAA307;*/
+}
+
+::ng-deep .mat-tab-label-content {
+  color: #000;
+  font-size: 18px;
+}
